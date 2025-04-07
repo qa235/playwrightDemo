@@ -58,7 +58,7 @@ npx playwright show-report
 ```
 playwrightDemo/
 ├── tests/                     # 測試腳本
-│   └── example.spec.ts        # 範例測試檔案
+│   └── test_login.py          # 範例測試檔案
 ├── .github/                   # GitHub Action CI/CD 設定
 ├── playwright.config.ts       # Playwright 設定檔案
 ├── package.json               # 套件資訊
