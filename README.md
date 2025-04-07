@@ -33,6 +33,8 @@ cd playwrightDemo
 ### **4. 安裝相依套件**
 ```bash
 npm install
+pip install pytest-playwright
+playwright install
 ```
 
 ---
@@ -40,29 +42,34 @@ npm install
 ## 📝 執行測試
 ### **1. 執行單一測試：**
 ```bash
-npx playwright test tests/example.spec.ts
+1. **基本執行：**pytest tests/
+
+Example:pytest tests/test_login.py-v
 ```
 
 ### **2. 執行所有測試：**
 ```bash
-npx playwright test
+pytest tests/ --html=reports/report.html --self-contained-html -v
+
 ```
 
 ### **3. 生成測試報告：**
 ```bash
-npx playwright show-report
+pytest tests/test_login.py --html=reports/report.html --self-contained-html -v && start reports/report.html
+
 ```
 ---
 
 ## 📂 專案結構
 ```
 playwrightDemo/
-├── tests/                     # 測試腳本
-│   └── test_login.py          # 範例測試檔案
-├── .github/                   # GitHub Action CI/CD 設定
-├── playwright.config.ts       # Playwright 設定檔案
-├── package.json               # 套件資訊
-└── README.md                  # 專案說明文件
+├── tests/                   # 測試腳本
+│   └── test_login.py        # 範例測試檔案
+├── reports/  
+│   ├── report.html          # 測試報告  
+│   └── screenshots/         # 截圖存放資料夾  
+└── package.json             # 套件資訊
+└── README.md                 # 專案說明文件
 ```
 
 ---
