@@ -20,9 +20,11 @@
 [下載 Node.js](https://nodejs.org/)
 
 ### **2. 安裝 Playwright**
-透過 npm 安裝 Playwright：  
+透過 安裝 Playwright：  
 ```bash
-npm init playwright@latest
+pip insall playwright
+playwright install
+
 ```
 
 ### **3. 克隆專案**
@@ -35,6 +37,8 @@ cd playwrightDemo
 npm install
 pip install pytest-playwright
 playwright install
+pip install pytest
+
 ```
 
 ---
